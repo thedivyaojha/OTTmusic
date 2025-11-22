@@ -33,7 +33,7 @@ export default function IndiaHeatMap() {
 
   const loadCSVData = async () => {
     try {
-      const response = await fetch('/public/data/wynk-report.csv');
+      const response = await fetch('/data/wynk-report.csv');
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
